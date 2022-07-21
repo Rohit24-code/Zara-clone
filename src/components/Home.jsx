@@ -27,7 +27,7 @@ const Home = () => {
     <Box pos="relative">
       <Box>
         <img src={arr[ind].image1} alt="" width="cover" height="600px" />
-        <Flex zIndex={2} pos="absolute" gap={1028}>
+        <Flex zIndex={2} pos="fixed" top={50} left={1} gap={1000} >
           <Box>
             <Button
               disabled={ind == 0}
@@ -36,7 +36,7 @@ const Home = () => {
               size="lg"
               mt={60}
             >
-              <ChevronLeftIcon w={7} h={10} />
+              <ChevronLeftIcon w={12} h={10} />
             </Button>
           </Box>
           <Box>
@@ -47,11 +47,18 @@ const Home = () => {
               size="lg"
               mt={60}
             >
-              <ChevronRightIcon w={7} h={10} />
+              <ChevronRightIcon w={12} h={10} />
             </Button>
           </Box>
         </Flex>
       </Box>
+
+    <Flex  gap={15} pos='fixed' top={450} left={450}>
+      <Text fontSize='sm' >NEW</Text>
+      <Text fontSize='sm' >NEW COLLECTION</Text>
+      <Text fontSize='sm' >SHOES</Text>
+      <Text fontSize='sm' >SALE</Text>
+    </Flex>
 
       <Box height="600px">
         <video width="cover" autoPlay="autoPlay" loop={true} muted>

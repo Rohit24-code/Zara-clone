@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 let Men = [
   "NEW",
@@ -57,21 +58,34 @@ let Child = [
   "ACCESSORIES",
   "JOIN LIFE",
 ];
+let men="men";
+let women="women";
+let child="child";
 
 function Dbody() {
   const [nam, setName] = useState(Women);
-
+  const [link,setLink] = useState("women");
+console.log(link)
   return (
     <Box>
       <Flex gap={6}>
-        <Box style={{ cursor: "pointer" }} onClick={() => setName(Women)}>
+        <Box style={{ cursor: "pointer" }} onClick={() => {
+          setName(Women)
+            setLink(women)
+          }}>
           Women
         </Box>
-        <Box style={{ cursor: "pointer" }} onClick={() => setName(Men)}>
+        <Box style={{ cursor: "pointer" }} onClick={() => {
+          setName(Men)
+          setLink(men)
+          }}>
           Men
         </Box>
 
-        <Box style={{ cursor: "pointer" }} onClick={() => setName(Child)}>
+        <Box style={{ cursor: "pointer" }} onClick={() => {
+          setName(Child)
+          setLink(child)
+          }}>
           Child
         </Box>
       </Flex>
@@ -80,7 +94,7 @@ function Dbody() {
           nam.map((el, ind) => {
             return (
               <Text key={ind} fontSize="xs" fontWeight={400}>
-                {el}
+                <Link to={`/${link}`}>{el}</Link>
               </Text>
             );
           })}

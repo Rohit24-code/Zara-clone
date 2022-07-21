@@ -9,14 +9,15 @@ function Login() {
         <Navbar />
       </Box>
 
-      {/* <Box> */}
       <Box mt={200}>
-        <Input placeholder="extra small size" size="xs" />
-        <Input placeholder="small size" size="sm" />
-        <Input placeholder="medium size" size="md" />
-        <Input placeholder="large size" size="lg" />
+        <Container>
+          <Stack spacing={3}>
+             
+            <Input placeholder="medium size" size="md" borderBottom={20} borderBottomColor='black' />
+           
+          </Stack>
+        </Container>
       </Box>
-      {/* </Box> */}
     </>
   );
 }

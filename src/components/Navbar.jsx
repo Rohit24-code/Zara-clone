@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Box,
   Button,
@@ -20,10 +20,12 @@ import {
 import Zara from "./Zara";
 import Dbody from "./Dbody";
 import { Link } from "react-router-dom";
+import { Appcontext } from "../Context/AppContext";
 
 const Navbar = () => {
   const [placement, setPlacement] = React.useState("left");
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const {state} = useContext(Appcontext)
 
   return (
     <Flex bgColor="transparent" pos="fixed" top={0} w="100%" zIndex={2}>
@@ -78,7 +80,7 @@ const Navbar = () => {
           </Text>
         </Box>
         <Box style={{ cursor: "pointer" }}>
-          <svg
+          <svg 
             width="1.5rem"
             className="layout-header-links__cart-icon"
             viewBox="0 0 24 24"
@@ -94,6 +96,9 @@ const Navbar = () => {
               clipRule="evenodd"
               d="M22.8 23.4v-9h-5.4v9l2.695-2.827L22.8 23.4zm-4.6-1.998l1.894-1.987L22 21.407V15.2h-3.8v6.202z"
             ></path>
+            <text x="8" y="19" fill="black">
+              {state.cart.length}
+            </text>
           </svg>
         </Box>
       </Flex>
