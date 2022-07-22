@@ -3,6 +3,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Singledata from "./Singledata";
 import Loading from "./Loading";
+import Footer from "./Footer";
 
 function Kids() {
   const [data, setData] = useState([]);
@@ -26,6 +27,7 @@ function Kids() {
           })}
         </Flex>
       )}
+      <Footer/>
     </Box>
   );
 }

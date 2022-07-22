@@ -4,6 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Singledata from "./Singledata";
 import Loading from "./Loading";
 import { Appcontext } from "../Context/AppContext";
+import Footer from "./Footer";
 
 function Men() {
   const [data, setData] = useState([]);
@@ -29,6 +30,7 @@ function Men() {
           })}
         </Flex>
       )}
+      <Footer/>
     </Box>
   );
 }

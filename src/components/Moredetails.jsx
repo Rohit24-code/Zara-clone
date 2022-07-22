@@ -15,7 +15,7 @@ import {
   DrawerCloseButton,
   Input
 } from "@chakra-ui/react";
-
+import './moredetails.css'
 function Moredetails() {
    const { pagedata, setPagedata } = useContext(SingleContext);
     const { state, dispatch } = useContext(Appcontext);
@@ -23,7 +23,7 @@ function Moredetails() {
     const btnRef = React.useRef();
 
   return (
-    <Box mt="84px" alignItems="center" ml="16%">
+    <Box mt="84px" alignItems="center" ml="16%" className="scrolldetails">
       <Flex gap={20}>
         <Box width="200px" mt="92px">
           <Text>MATERIALS, CARE AND ORIGIN </Text>
@@ -118,7 +118,6 @@ function Moredetails() {
           <Text mt={8}>DELIVERY, EXCHANGES AND RETURNS</Text>
         </Box>
       </Flex>
-
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -135,7 +134,7 @@ function Moredetails() {
             <Box maxHeight="350px" overflow="auto" mt="20px" p="2px">
               {state.cart.map((el) => {
                 return (
-                  <Box mt={9}>
+                  <Box mt={9} key={el._id}>
                     <Flex justify="space-around">
                       <Box>
                         <Text mb={8}>{el.prod_name}</Text>
@@ -152,9 +151,11 @@ function Moredetails() {
           </DrawerBody>
           <Box border="1px" borderColor="black" width="100%" bg="black"></Box>
           <DrawerFooter>
-            <Button bg="black" color="white" width="90%">
-              <Link to="/cart">Go To Basket</Link>
-            </Button>
+            <Link to="/cart">
+              <Button bg="black" color="white" width="90%">
+                Go To Basket
+              </Button>
+            </Link>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

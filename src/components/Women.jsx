@@ -3,6 +3,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Singledata from "./Singledata";
 import Loading from "./Loading";
+import Footer from "./Footer";
 
 function Women() {
   const [data, setData] = useState([]);
@@ -26,6 +27,7 @@ function Women() {
           })}
         </Flex>
       )}
+      <Footer/>
     </Box>
   );
 }

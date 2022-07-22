@@ -10,7 +10,7 @@ import { SingleContextProvider } from './Context/singleContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <SingleContextProvider>
       <Appcontextprovider>
         <BrowserRouter>
@@ -20,7 +20,7 @@ root.render(
         </BrowserRouter>
       </Appcontextprovider>
     </SingleContextProvider>
-  </React.StrictMode>
+  // {/* </React.StrictMode> */}
 );
 
 

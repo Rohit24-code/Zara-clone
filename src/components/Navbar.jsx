@@ -21,6 +21,7 @@ import Zara from "./Zara";
 import Dbody from "./Dbody";
 import { Link } from "react-router-dom";
 import { Appcontext } from "../Context/AppContext";
+import './moredetails.css'
 
 const Navbar = () => {
   const [placement, setPlacement] = React.useState("left");
@@ -28,7 +29,14 @@ const Navbar = () => {
   const {state} = useContext(Appcontext)
 
   return (
-    <Flex bgColor="transparent" pos="fixed" top={0} w="100%" zIndex={2}>
+    <Flex
+      bgColor="transparent"
+      pos="fixed"
+      top={0}
+      w="100%"
+      zIndex={2}
+      className="scrolldetails"
+    >
       <Flex p="2" gap={24}>
         {/* drawer  */}
         <Box style={{ cursor: "pointer" }} p={2}>
@@ -80,7 +88,7 @@ const Navbar = () => {
           </Text>
         </Box>
         <Box style={{ cursor: "pointer" }}>
-          <svg 
+          <svg
             width="1.5rem"
             className="layout-header-links__cart-icon"
             viewBox="0 0 24 24"

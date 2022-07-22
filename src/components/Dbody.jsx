@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import './moredetails.css'
 let Men = [
   "NEW",
   "ZARA ATHLETICZ",
@@ -67,7 +67,7 @@ function Dbody() {
   const [link,setLink] = useState("women");
 console.log(link)
   return (
-    <Box>
+    <Box className="scrolldetails">
       <Flex gap={6}>
         <Box style={{ cursor: "pointer" }} onClick={() => {
           setName(Women)
