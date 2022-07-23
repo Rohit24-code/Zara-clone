@@ -12,7 +12,7 @@ function Payment() {
         <Text>CHOOSE A PAYMENT METHOD</Text>
 
         <Box border="1px" borderColor="orange.300" p={3} mt="40px" mr="250px">
-          <Text color="orange.300" fontSize="xs">
+          <Text color="orange.300" fontSize="xs"  fontWeight="200">
             Please note that only cards that use 3D Secure are accepted. Contact
             your bank to activate it or for
             <br /> further instructions.
