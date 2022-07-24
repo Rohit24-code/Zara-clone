@@ -1,0 +1,11 @@
+.single_data{
+    position: relative;
+        text-align: center;
+        /* color: white; */
+}
+.single_data_text{
+    position: absolute;
+        bottom: 100px;
+        right: -30px;
+        transform: rotate(-90deg);
+}

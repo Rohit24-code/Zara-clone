@@ -1,0 +1,18 @@
+
+.scrolldetails ::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrolldetails ::-webkit-scrollbar-track {
+    background: grey;
+}
+
+/* Handle */
+.scrolldetails ::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+.scrolldetails ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
