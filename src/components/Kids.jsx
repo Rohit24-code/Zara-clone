@@ -1,4 +1,3 @@
-import axios from "axios";
 import { Box, Button, Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Singledata from "./Singledata";
@@ -11,17 +10,17 @@ import { Input, Text } from "@chakra-ui/react";
 // import Loading from "./Loading";
 import { useDisclosure } from "@chakra-ui/react";
 // import { useEffect } from "react";
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-} from "@chakra-ui/react";
+// import {
+//   Drawer,
+//   DrawerBody,
+//   DrawerFooter,
+//   DrawerHeader,
+//   DrawerOverlay,
+//   DrawerContent,
+//   DrawerCloseButton,
+// } from "@chakra-ui/react";
 import { Select } from "@chakra-ui/react";
-// import axios from "axios";
+import axios from "axios";
 
 const item = ["price", "size", "type1", "type2", "type3", "prod_name"];
 
