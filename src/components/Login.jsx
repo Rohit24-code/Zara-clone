@@ -8,10 +8,11 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+
 
 function Login() {
    const toast = useToast();
@@ -25,6 +26,8 @@ function Login() {
       .then((res) => setData(res.data));
   }, []);
 
+
+
   const [login, setlogin] = useState({ email: "", password: "" });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,10 +39,23 @@ function Login() {
     );
     setLoggedin(ndata);
     setlogin({email:"", password:""})
-
   };
-console.log(data);
 
+    useEffect(() => {
+      loggedin.length === 0
+        ? toast({
+            title: "Please Log In",
+            status: "error",
+            isClosable: true,
+          })
+        : toast({
+            title: "Account created.",
+            description: "Logged in Successfully",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          });
+    }, [loggedin]);
 
   return (
     <Box>
@@ -50,75 +66,61 @@ console.log(data);
       <Box mt={200} ml="16%">
         <Flex gap={20}>
           {/* <form> */}
+          <Box>
+            <Text fontSize="md" fontWeight="600">
+              LOG IN
+            </Text>
             <Box>
-              <Text fontSize="md" fontWeight="600">
-                LOG IN
+              <Text fontSize="xs" fontWeight="600" mt="10%">
+                E-MAIL
               </Text>
-              <Box>
-                <Text fontSize="xs" fontWeight="600" mt="10%">
-                  E-MAIL
-                </Text>
-                <Input
-                  border="none"
-                  borderRadius="none"
-                  borderColor="black"
-                  borderBottom="1px"
-                  onChange={handleChange}
-                  value={login.email}
-                  name="email"
-                  type="text"
-                  placeholder="enter email...."
-                />
-              </Box>
-              <Box>
-                <Text fontSize="xs" fontWeight="600" mt="10%">
-                  PASSWORD
-                </Text>
-                <Input
-                  border="none"
-                  borderRadius="none"
-                  borderColor="black"
-                  borderBottom="1px"
-                  onChange={handleChange}
-                  value={login.password}
-                  name="password"
-                  type="password"
-                  placeholder="enter password...."
-                />
-                <Text fontSize="xs" fontWeight="600" mt="10%">
-                  HAVE YOU FORGOTTEN YOUR PASSWORD?
-                </Text>
-              </Box>
-              <Box mt="15%">
-                <Button
-                  type="submit"
-                  bgColor="black"
-                  color="white"
-                  onClick={()=>{
-                    
-                    handleSubmit()
-                  
-                    loggedin.length===0 ? (  toast({
-            title: "Please Log In",
-            status: "error",
-            isClosable: true,
-          })) : (
-            // <Navigate to="/cart"/>
-            toast({
-                    title: "Account created.",
-                    description: "Logged in Successfully",
-                    status: "success",
-                    duration: 9000,
-                    isClosable: true,
-                  })
-          )
-                  }}
-                >
-                  LOG IN
-                </Button>
-              </Box>
+              <Input
+                border="none"
+                borderRadius="none"
+                borderColor="black"
+                borderBottom="1px"
+                onChange={handleChange}
+                value={login.email}
+                name="email"
+                type="text"
+                placeholder="enter email...."
+              />
             </Box>
+            <Box>
+              <Text fontSize="xs" fontWeight="600" mt="10%">
+                PASSWORD
+              </Text>
+              <Input
+                border="none"
+                borderRadius="none"
+                borderColor="black"
+                borderBottom="1px"
+                onChange={handleChange}
+                value={login.password}
+                name="password"
+                type="password"
+                placeholder="enter password...."
+              />
+              <Text fontSize="xs" fontWeight="600" mt="10%">
+                HAVE YOU FORGOTTEN YOUR PASSWORD?
+              </Text>
+            </Box>
+            <Box mt="15%">
+              <Button
+                type="submit"
+                bgColor="black"
+                color="white"
+                onClick={() => {
+                  handleSubmit();
+                }}
+              >
+                LOG IN
+              </Button>
+            </Box>
+          </Box>
           {/* </form> */}
+
+         
 
           {loggedin.length === 0 ? (
             <Box>
@@ -154,8 +156,9 @@ console.log(data);
               <Text>NOT YOU?</Text>
               <Text>
                 PLEASE,
-                <Link to="/signin">
+                {/* <Link to="/signin"> */}
                   <strong
+                  onClick={()=>setLoggedin([])}
                     style={{
                       borderBottom: "1px solid black",
                       cursor: "pointer",
@@ -163,7 +166,7 @@ console.log(data);
                   >
                     SIGN OUT
                   </strong>
-                </Link>
+                {/* </Link> */}
                 TO BEGIN BROWSING AS
               </Text>
               <Text>AN ANONYMOUS USER.</Text>
