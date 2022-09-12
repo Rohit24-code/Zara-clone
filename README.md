@@ -21,7 +21,7 @@
   
  
   
-  ![Store poster](https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly1.png)
+  ![Store poster](https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/homepage.png)
 
   
 
@@ -29,13 +29,12 @@
 
 ## 🚀 Features
 - Login/Signup User Account
-- Sorting Based on Price & Ratings
+- Sorting Based on Price & color
 - Homepage
 - Cart Add/Remove Items
-- Address Management
-- Coupons are provided for the discount
-- Cart page with apply coupon & Shipping Address 
+- Single Page
 - All products page are working
+- Responsive
 
 <br />
 
@@ -44,16 +43,20 @@
 
 <table>
   <tr>
-    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly1.png" alt="home" /></td>
-    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly2.png" alt="f" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/girlimage.png" alt="home" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/lefthamburger.png" alt="f" /></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly3.png" alt="trending" /></td>
-    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly4.png" alt="s" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/womenpage.png" alt="trending" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/singlepage.png" alt="s" /></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly5.png" alt="cart" /></td>
-    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly6.png" alt="signup" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/login.png" alt="cart" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/AddedToBasket.png" alt="signup" /></td>
+  </tr>
+     <tr>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/addedTocart.png" alt="cart" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/paymentpage.png" alt="signup" /></td>
   </tr>
 </table>
 
@@ -61,7 +64,7 @@
 
 ## Getting Started
 
-This project was built using HTML5, CSS3, JavaScript. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
+This project was built using React,Material-Ui. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
 
 
 ### Prerequisites
@@ -72,7 +75,7 @@ This project was built using HTML5, CSS3, JavaScript. It is an e-commerce web ap
 ### Setup
 
 
-The project repository can be found in [GitHub link](https://github.com/optimizershivam/Bluefly-webapp) or just clone the project using this command. 
+The project repository can be found in [GitHub link](https://github.com/Rohit24-code/Zara-clone) or just clone the project using this command. 
 
 
 ```
@@ -119,8 +122,8 @@ To run the application open index.html in the live server.
 
 If you want to contact me, you can reach me through below handles.
 
-[![linkedin](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsurshivam/)
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/optimizershivam/)
+[![linkedin](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohit-singh-423264202/)
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rohit24-code)
 
 © 2022 Rohit singh
 
