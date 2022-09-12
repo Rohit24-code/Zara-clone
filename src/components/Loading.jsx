@@ -3,10 +3,10 @@ import { Box} from "@chakra-ui/react";
 
 const Loading = () => {
   return (
-    <Box pos='absolute'  left="45%" >
-        <img src="loading.gif" alt="" />
+    <Box  as='div' width='100vw' height='100vh'  style={{backgroundImage:`url("loading.gif")`}}>
+      {/* <img  src="jumpingletters.gif" alt="" /> */}
     </Box>
-  )
+  );
 }
 
 export default Loading

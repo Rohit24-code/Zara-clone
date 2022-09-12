@@ -1,0 +1,10 @@
+.zaraicon{
+    color: "black";
+     width: 10rem
+}
+@media only screen and (max-width: 600px) {
+    .zaraicon {
+        color: black;
+        width: 5rem;
+    }
+}

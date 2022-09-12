@@ -37,7 +37,7 @@ const Navbar = () => {
       zIndex={2}
       className="scrolldetails"
     >
-      <Flex p="2" gap={24}>
+      <Flex p="2" gap={[3,6,24]}>
         {/* drawer  */}
         <Box style={{ cursor: "pointer" }} p={2}>
           <Button onClick={() => onOpen()} m={1} bg="transparent">
@@ -55,7 +55,7 @@ const Navbar = () => {
             <DrawerContent>
               <DrawerCloseButton />
 
-              <DrawerHeader ml={12}>
+              <DrawerHeader ml={[0,0,12]}>
                 <Zara />
               </DrawerHeader>
 

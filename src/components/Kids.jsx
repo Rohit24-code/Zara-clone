@@ -19,10 +19,10 @@ import { useDisclosure } from "@chakra-ui/react";
 //   DrawerContent,
 //   DrawerCloseButton,
 // } from "@chakra-ui/react";
-import { Select } from "@chakra-ui/react";
+// import { Select } from "@chakra-ui/react";
 import axios from "axios";
 
-const item = ["price", "size", "type1", "type2", "type3", "prod_name"];
+// const item = ["price", "size", "type1", "type2", "type3", "prod_name"];
 
 function Kids() {
   const [data, setData] = useState([]);

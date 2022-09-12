@@ -1,13 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
+import './zara.css'
 
 function Zara() {
   return (
-    <Box style={{ cursor: "pointer" }} p="1rem">
+    <Box style={{ cursor: "pointer" }} p={[4,8,16]}>
       <svg
-        style={{ color: "black", width: "10rem" }}
         aria-label="ZARA India logo. Go to home page"
-        className="layout-logo__icon layout-header__logo-icon"
+        className="zaraicon"
         viewBox="0 0 132 55"
         xmlns="http://www.w3.org/2000/svg"
       >

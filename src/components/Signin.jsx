@@ -170,13 +170,13 @@ function Signin() {
 
                   handleSubmit()
                   user.email && user.password && user.address && user.name && user.locality && user.state
-                    ? toast({
+                    ?( toast({
                         title: "Account created.",
                         description: "You have Successfully signed in.",
                         status: "success",
                         duration: 9000,
                         isClosable: true,
-                      })
+                      }))
                     : toast({
                         title: "Account not created.",
                         description: "Please fill all the sections",

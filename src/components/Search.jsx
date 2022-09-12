@@ -65,6 +65,7 @@ function Search() {
 
           <form onSubmit={getsearch}>
             <Input
+              width="5%"
               onChange={(e) => setText(e.target.value)}
               border="none"
               borderRadius="0"
