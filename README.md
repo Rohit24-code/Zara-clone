@@ -52,7 +52,7 @@
   </tr>
   <tr>
     <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/login.png" alt="cart" /></td>
-    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/AddedToBasket.png" alt="signup" /></td>
+    <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/AddToBasket.png" alt="signup" /></td>
   </tr>
      <tr>
     <td><img src="https://github.com/Rohit24-code/Zara-clone/blob/main/src/zaraImages/addedTocart.png" alt="cart" /></td>
