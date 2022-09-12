@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+<h1 align="center">Zara Clone</h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">It's an Famous E-commerce web application with all the major functionalities working end to end</h2>
 
-## Available Scripts
+<br />
+<p align="center">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"/> 
+    <img src="https://img.shields.io/badge/React-323330?style=for-the-badge&logo=react&logoColor=F7DF1E" alt="React" />
+    <img src ="https://img.shields.io/badge/materialui-%23563D7C.svg?style=for-the-badge&logo=materialui&logoColor=white" alt="Material-Ui"/>   
+</p>
 
-In the project directory, you can run:
+<h3 align="center"><a href="https://zara-clone-git-main-rohit24-code.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
 
-### `npm start`
+<p align="center"> 
+    <br />&#10023;
+    <a href="#Demo">View Demo</a>   &#10023;  
+    <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;   
+  </p>
+  
+  Zara is an e-commerce web application that allows you to shop online. It has a variety of categories, just visit the top left hamburger icon and you will see all the items available, apply sorting as per your need and in just a few clicks from the website.
+  
+ 
+  
+  ![Store poster](https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly1.png)
 
-Runs the app in the development mode.\
-Open [https://zaraclone-json-data.herokuapp.com/](https://zaraclone-json-data.herokuapp.com/) to view it in your browser.
+  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Features
+- Login/Signup User Account
+- Sorting Based on Price & Ratings
+- Homepage
+- Cart Add/Remove Items
+- Address Management
+- Coupons are provided for the discount
+- Cart page with apply coupon & Shipping Address 
+- All products page are working
 
-### `npm run build`
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Glimpses of Mini-Store 🙈 :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<table>
+  <tr>
+    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly1.png" alt="home" /></td>
+    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly2.png" alt="f" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly3.png" alt="trending" /></td>
+    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly4.png" alt="s" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly5.png" alt="cart" /></td>
+    <td><img src="https://github.com/optimizershivam/Bluefly-webapp/blob/master/bluefly/bluefly6.png" alt="signup" /></td>
+  </tr>
+</table>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project was built using HTML5, CSS3, JavaScript. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- NPM 
+- Node JS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Setup
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project repository can be found in [GitHub link](https://github.com/optimizershivam/Bluefly-webapp) or just clone the project using this command. 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+Using HTTPS
+# git clone 
+```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Install
 
-### Advanced Configuration
+Install NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Check that you have node and npm installed
 
-### Deployment
+To check if you have Node.js installed, run this command in your terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+```
+node -v
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To confirm that you have npm installed you can run this command in your terminal:
+
+
+```
+npm -v
+```
+
+To run the application open index.html in the live server.
+
+
+
+
+### Tools used on this project
+
+- Visual Studio Code
+
+
+<br/>
+
+
+
+## Contact
+
+If you want to contact me, you can reach me through below handles.
+
+[![linkedin](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/itsurshivam/)
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/optimizershivam/)
+
+© 2022 Rohit singh
+
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
