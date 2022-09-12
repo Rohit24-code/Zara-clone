@@ -9,7 +9,7 @@
     <img src ="https://img.shields.io/badge/materialui-%23563D7C.svg?style=for-the-badge&logo=materialui&logoColor=white" alt="Material-Ui"/>   
 </p>
 
-<h3 align="center"><a href="https://stunning-stroopwafel-8b6ace.netlify.app/"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://zara-clone-git-main-rohit24-code.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
 
 <p align="center"> 
     <br />&#10023;
@@ -17,7 +17,7 @@
     <a href="#Getting-Started">Getting Started</a> &#10023; <a href="#Install">Installing</a> &#10023;   
   </p>
   
-  Bluefly is an e-commerce web application that allows you to shop online. It has a variety of categories, just visit the  listing page, trending page and you will see all the items available, apply sorting as per your need and in just a few clicks from the website.
+  Zara is an e-commerce web application that allows you to shop online. It has a variety of categories, just visit the top left hamburger icon and you will see all the items available, apply sorting as per your need and in just a few clicks from the website.
   
  
   
