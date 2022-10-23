@@ -12,7 +12,7 @@ import { Link} from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-
+import {signInWithGoogle} from '../services/firebase'
 
 function Login() {
    const toast = useToast();
@@ -26,7 +26,7 @@ function Login() {
       .then((res) => setData(res.data));
   }, []);
 
-
+// console.log(data);
 
   const [login, setlogin] = useState({ email: "", password: "" });
   const handleChange = (e) => {
@@ -44,11 +44,13 @@ function Login() {
     useEffect(() => {
       loggedin.length === 0
         ? toast({
+            position: "top",
             title: "Please Log In",
             status: "error",
             isClosable: true,
           })
         : toast({
+            position: "top",
             title: "Account created.",
             description: "Logged in Successfully",
             status: "success",
@@ -176,6 +178,13 @@ function Login() {
           {/* */}
         </Flex>
       </Box>
+      {/* <Button
+                type="submit"
+                bgColor="black"
+                color="white"
+                onClick={signInWithGoogle}
+                >Sign in</Button> */}
+
       <Footer />
     </Box>
   );

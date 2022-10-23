@@ -22,11 +22,13 @@ import Dbody from "./Dbody";
 import { Link } from "react-router-dom";
 import { Appcontext } from "../Context/AppContext";
 import './moredetails.css'
+import { AuthContext } from "../Context/AuthContext";
 
 const Navbar = () => {
   const [placement, setPlacement] = React.useState("left");
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {state} = useContext(Appcontext)
+const { loggedin } = useContext(AuthContext);
 
   return (
     <Flex
@@ -37,7 +39,7 @@ const Navbar = () => {
       zIndex={2}
       className="scrolldetails"
     >
-      <Flex p="2" gap={[3,6,24]}>
+      <Flex p="2" gap={[3, 6, 24]}>
         {/* drawer  */}
         <Box style={{ cursor: "pointer" }} p={2}>
           <Button onClick={() => onOpen()} m={1} bg="transparent">
@@ -55,7 +57,7 @@ const Navbar = () => {
             <DrawerContent>
               <DrawerCloseButton />
 
-              <DrawerHeader ml={[0,0,12]}>
+              <DrawerHeader ml={[0, 0, 12]}>
                 <Zara />
               </DrawerHeader>
 
@@ -73,7 +75,7 @@ const Navbar = () => {
       </Flex>
       <Spacer />
       <Flex p="4" gap={4}>
-        <Link to='search'>
+        <Link to="search">
           <Box borderBottom="1px" borderColor="black" mb="42px" pr={5}>
             <Text style={{ cursor: "pointer" }} fontSize="lg" fontWeight={500}>
               Search
@@ -82,7 +84,9 @@ const Navbar = () => {
         </Link>
         <Box>
           <Text style={{ cursor: "pointer" }} fontSize="md" fontWeight={250}>
-            <Link to="/login"> Log In </Link>
+            <Link to="/login">
+            {  loggedin.length === 0 ? "Log In" : loggedin[0].name}
+            </Link>
           </Text>
         </Box>
         <Box>
